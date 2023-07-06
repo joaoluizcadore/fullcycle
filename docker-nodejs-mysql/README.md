@@ -16,3 +16,13 @@ Suba tudo em um repositório e faça a entrega.
 * A linguagem de programação para este desafio é Node/JavaScript.
 
 ```
+
+## Resultado:
+
+```
+➜ docker-compose ps
+NAME                IMAGE                       COMMAND                  SERVICE             CREATED              STATUS                        PORTS
+app                 joaoluizcadore/nodejs-app   "docker-entrypoint.s…"   app                 About a minute ago   Up About a minute             3000/tcp
+db                  mysql/mysql-server:latest   "/entrypoint.sh --in…"   db                  About a minute ago   Up About a minute (healthy)   3306/tcp, 33060-33061/tcp
+nginx               joaoluizcadore/nginx        "/docker-entrypoint.…"   nginx               About a minute ago   Up About a minute             80/tcp, 0.0.0.0:8080->8080/tcp
+```
