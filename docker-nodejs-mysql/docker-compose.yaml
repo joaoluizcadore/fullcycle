@@ -10,7 +10,7 @@ services:
 
     volumes:
       - ./database:/var/lib/mysql
-
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
       - MYSQL_DATABASE=nodedb
       - MYSQL_PASSWORD=root
@@ -26,9 +26,6 @@ services:
       context: ./app
     image: joaoluizcadore/nodejs-app
     container_name: app
-
-    volumes:
-      - ./app:/app
 
     networks:
       - nodegateway
