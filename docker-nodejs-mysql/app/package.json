@@ -1,0 +1,20 @@
+{
+  "name": "docker-nodejs-mysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/joaoluizcadore/fullcycle/docker-nodejs-mysql"
+  },
+  "author": "Joao Luiz Cadore",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.4.5"
+  }
+}
